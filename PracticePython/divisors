@@ -1,0 +1,9 @@
+""" prints all the divisors of a given num """
+
+def divisors_of_num(divisor_num):
+    """ bob """
+    for num in range(1, divisor_num + 1):
+        if divisor_num % num == 0:
+            print(f"{num} is a divisor of {divisor_num}")
+
+divisors_of_num(48)

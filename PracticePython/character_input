@@ -1,0 +1,19 @@
+""" A program that asks the age and name of the user and 
+calculates when they will turn 100 years old """
+
+def get_age():
+    """ gets the age and name of the user"""
+    name = ""
+    age = 0
+    while name == "" or age == 0:
+        name = input("Please enter your name: ")
+        age = int(input("Please enter your age: "))
+    calc_100(name, age)
+
+def calc_100(name, age):
+    """ calculates year of turning 100 and prints statement"""
+    date_of_age = 2026 + 100 - age
+    print(f"{name} you will turn 100 in the year {date_of_age}")
+
+
+get_age()
